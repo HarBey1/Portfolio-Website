@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-position: center;
+    background-size:contain;
+    background-attachment: fixed;
+    background-image: url(./images/hero\ image.png);
+    overflow-x: hidden;
+    }
+header{
+    height: 100vh;
+    width: 100vw;
+}
+.cvv{
+    width: 30vw;
+    height: 90vh;
+    position: relative;
+    top: 45px;
+    left: 600px;
+}
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/hero\ image.png);
+    background-attachment: fixed;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+nav{
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 200px;
+    margin: auto;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+}
+span{
+    color: red;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: red;
+    transition: .3s;
+}
+button{
+    border: none;
+    background: red;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .4s;
+}
+button a{
+    text-decoration: none;
+    color:white;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: red;
+    background: white;
+}
+button a:hover{
+    cursor: pointer;
+    color: red;
+}
+.burger{
+    position: absolute;
+    top: 6%;
+    left: 1150px;
+    display: block;
+    gap: 10px;
+    cursor: pointer;
+    /* display: none; */
+}
+.b1{
+    width: 25px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 7px;
+}
+.b2{
+    width: 25px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 7px;
+}
+.b3{
+    width: 25px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 7px;
+}
+.change .b1 {
+    -webkit-transform: rotate(-45deg) 
+    translate(-9px, 6px);
+    transform: rotate(-45deg) 
+    translate(-9px, 6px);
+    transition: .5s;
+  }
+  
+  .change .b2 {
+    opacity: 0;
+    transition: .5s;}
+  
+  .change .b3 {
+    -webkit-transform: rotate(45deg) 
+    translate(-8px, -8px);
+    transform: rotate(45deg) 
+    translate(-8px, -8px);
+    transition: .5s;
+  }
+#about{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 0, 31);
+}
+.asec{ 
+    font-size: 32px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0px 0px 0px; 
+}
+.abt{
+    width: 40%;
+    height: 70%;
+    background-color: rgba(0, 1, 51, 0.562);
+    margin: auto;
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.boy{
+    position: absolute;
+    top: 880px;
+    left: 100px;
+    width: 400px;
+    height: 550px;
+}
+#skills{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.skls{
+    font-size: 32px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0px 0px 0px; 
+}
+.skill{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+.txt{
+    width: fit-content;
+    height: fit-content;
+    padding: 16px;
+    background-color: rgb(248, 0, 0);
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.txt:hover{
+    cursor: pointer;
+    background-color:rgb(255, 187, 0);
+    color: rgb(7, 0, 31);
+    transition: 2s;
+}
+#contact{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(5, 0, 24, 0.945);
+}
+.cntct{
+    font-size: 32px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0px 140px 0px; 
+}
+.muse img{
+    width: 440px;
+    height: 500px;
+    position: absolute;
+    top: 20vh;
+    left: 960px;
+}
+.introduction{
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    top: 40vh;
+    right: 650px;
+    }
+.introduction h3{
+    color: red;
+    position: absolute;
+    left: 180px;
+}
+
+.imm{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid rgb(185, 0, 0);
+    margin-top: 70px;
+}
+.imm:hover{
+    border: 6px solid rgb(255, 187, 0);
+    transition: 2s ease-in-out;
+    cursor: pointer;
+}
+.underline1{
+    width: 190px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    top: 160px;
+}
+
+.underline2{
+    width: 90px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.can{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.can img{
+    width: 200px;
+    height: 200px;
+    color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero{
+        height: 100vh;
+        width: 100vw;
+        background-size: contain;
+        background-position: center;
+        background-image: url(./images/hero\ image.png);
+        background-attachment: fixed;
+        display: block;
+        margin-left: 5%;
+        margin-top: 7%;
+      
+    }
+    nav{
+        position: absolute;
+        z-index: 10000;
+        display: block;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 0px;
+     
+    }
+    nav ul li{
+        list-style-type: none;
+        display:block;
+        padding: 10px 0px;
+    }
+    button{
+        border: none;
+        background: red;
+        padding: 9px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        transition: .4s;
+    }
+    button a{
+        text-decoration: none;
+        color:white;
+    }
+.burger{
+    display: contents;
+    
+}
+  }
+  
